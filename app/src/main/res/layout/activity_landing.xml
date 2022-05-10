@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity">
+
+    <LinearLayout
+        android:id="@+id/login_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="200dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/landing_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/submit" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
